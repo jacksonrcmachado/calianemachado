@@ -1,0 +1,157 @@
+/* Container principal */
+.home-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Imagem de largura total */
+.full-width-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .full-width-image img {
+    height: 300px; /* Reduz a altura para telas menores */
+    /*margin-top: 75px; /* Adiciona espaçamento para evitar sobreposição com o header */
+  }
+}
+
+@media (max-width: 480px) {
+  .full-width-image img {
+    height: 200px; /* Reduz ainda mais a altura para telas pequenas */
+    /*margin-top: 30px; /* Adiciona espaçamento para evitar sobreposição com o header */
+  }
+}
+
+/* Título das seções */
+.section-title {
+  font-family: 'Scheherazade New', serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: #E6007E;
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 135px;
+}
+
+/* Descrição das seções */
+.section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  color: #000;
+  text-align: left;
+  margin-left: 135px;
+  width: 80%;
+  line-height: 1.6;
+}
+
+/* Imagens de retrato para a seção Projetos */
+.project-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 135px;
+  margin-right: 135px;
+  flex-wrap: wrap;
+}
+
+.portrait-image {
+  width: 313px;
+  height: 440px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.double-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 440px;
+}
+
+.portrait-image-small {
+  width: 313px;
+  height: 208px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portrait-image-small + .portrait-image-small {
+  margin-top: 24px;
+}
+
+/* Imagens de paisagem para a seção Álbuns */
+.album-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.landscape-image {
+  width: 520px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+  .portrait-image, .landscape-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 48px;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+
+  .section-description {
+    font-size: 20px;
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .project-images {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-images, .album-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait-image, .landscape-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 36px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+
+  .section-description {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .project-images {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

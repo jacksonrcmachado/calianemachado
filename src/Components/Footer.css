@@ -1,0 +1,84 @@
+/* Estilo geral do rodapé */
+.footer {
+  background-color: #E6007E;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Conteúdo do rodapé com layout flexível */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap; /* Permite que os itens quebrem para outra linha em telas menores */
+}
+
+/* Link do rodapé com ícone e texto */
+.footer-link {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* ícone ao lado do texto */
+.footer-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/* Opção 1 */
+.footer-option1 {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-option1-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Alinha os itens em coluna para telas menores */
+    gap: 20px; /* Reduz o espaçamento entre os links */
+  }
+  
+  .footer-link, 
+  .footer-option1 {
+    justify-content: center;
+    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+  }
+  
+  .footer-icon, 
+  .footer-option1-icon {
+    font-size: 18px; /* Reduz o tamanho do ícone em telas menores */
+  }
+} 
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 0; /* Reduz o espaçamento do rodapé em telas muito pequenas */
+  }
+  
+  .footer-link, 
+  .footer-option1 {
+    font-size: 12px; /* Reduz o tamanho da fonte ainda mais para telas pequenas */
+  }
+  
+  .footer-icon, 
+  .footer-option1-icon {
+    font-size: 16px; /* Ajusta o tamanho do ícone para telas pequenas */
+  }
+}

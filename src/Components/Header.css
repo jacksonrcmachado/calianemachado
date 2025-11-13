@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Ajustes gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do cabeçalho */
+.header {
+  background-color: #E6007E; /* Cor atualizada do cabeçalho */
+  padding: 16px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  align-items: center; /* Alinhamento vertical */
+  width: 100%; /* Ocupa toda a largura da página */
+  /* position: fixed; /* Fixa o cabeçalho no topo */
+  position: sticky;
+  top: 0; /* Define a posição no topo */
+  left: 0; /* Define a posição à esquerda */
+  height: 70px; /* Ajuste conforme o tamanho do Header */
+  /* z-index: 1000; /* Para garantir que ele fique acima do conteúdo */
+}
+
+.nav-links {
+  flex: 1; /* Permite que os links ocupem todo o espaço disponível */
+  display: flex; /* Layout flexível para os links */
+  justify-content: center; /* Centraliza os links */
+  gap: 100px; /* Aumenta o espaçamento entre os links */
+}
+
+.link {
+  color: white; /* Cor do texto dos links */
+  text-decoration: none; /* Remove sublinhado */
+  font-family: 'Inter bold', sans-serif; /* Fonte Open Sans */
+  font-size: 24px; /* Tamanho da fonte 24px */
+}
+
+.link:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.logo { 
+  margin-left: -70px; /* Ajusta o logo mais próximo dos links */ 
+  padding-right: 70px; /* Adiciona espaçamento para o logo */ }
+
+.logo img {
+  height: 60px; /* Altura do logo */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+    align-items: center; /* Alinha itens ao centro em telas pequenas */
+    background-color: #E6007E; /* Garante que a cor de fundo seja mantida */
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    height: auto; /* Ajusta a altura do cabeçalho para caber os elementos */
+  }
+
+  .nav-links {
+    width: 100%; /* Links ocupam 100% da largura */
+    justify-content: center; /* Distribui os links uniformemente */
+    margin-bottom: 16px; /* Adiciona margem inferior para espaçamento */
+    gap: 40px; /* Aumenta o espaçamento entre os links */
+  }
+
+  .logo img {
+    align-self: center; /* Centraliza o logo */
+    margin-left: 130px; /* Remove a margem à esquerda no modo responsivo */
+    /* padding-right: 0; /* Remove o padding à direita no modo responsivo */
+    margin-bottom: 16px; /* Adiciona margem inferior para alinhamento vertical */
+  }
+}

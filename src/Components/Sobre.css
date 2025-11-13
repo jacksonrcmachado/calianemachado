@@ -1,0 +1,112 @@
+.sobre-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 80px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Coluna de texto */
+.sobre-texto {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 50px;
+  margin-top: 130px;
+}
+
+.sobre-titulo {
+  font-family: 'Scheherazade New', serif;
+  font-size: 55px;
+  font-weight: bold;
+  color: #E6007E;
+  margin-bottom: 40px;
+  margin-left: 110px;
+  font-style: bolt;
+}
+
+.sobre-paragrafo {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-left: 110px;
+  color: #000;
+}
+
+/* Coluna da direita */
+.sobre-direita {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-foto {
+  width: 350px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.sobre-curriculo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sobre-curriculo h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #E6007E;
+  margin-bottom: 10px;
+}
+
+.sobre-botao {
+  background-color: #E6007E;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sobre-botao:hover {
+  background-color: #c40068;
+}
+
+/* Logo no final da página */
+.sobre-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.sobre-logo {
+  width: 200px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .sobre-texto {
+    margin-right: 0;
+  }
+
+  .sobre-foto {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sobre-logo {
+    width: 150px;
+  }
+}
