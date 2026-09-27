@@ -57,7 +57,7 @@ const Home: React.FC = () => {
 
             <Link to="/graficoidvisual">
             <img
-              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/IDRaquel/IDRaquel_Capa.webp`)}              
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Capa.webp`)}              
               alt="Capa Raquel"
               className="img-right-3"
             />

@@ -79,7 +79,7 @@ const Ux: React.FC = () => {
             <h3 className="ux-item-titulo">APRESENTAÇÃO</h3>
 
             <img
-              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/apresentacao.jpg`)}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/apresentacao.webp`)}
               alt="Apresentação"
               className="ux-item-img"
             />

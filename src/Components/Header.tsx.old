@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
   const path = location.pathname;
-  const [menuOpen, setMenuOpen] = useState(false);
 
   // Define as páginas
   const pages = [
@@ -24,32 +23,15 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* Botão hamburguer - só aparece no mobile via CSS */}
-      <button
-        className="menu-toggle"
-        onClick={() => setMenuOpen((prev) => !prev)}
-        aria-label="Abrir menu"
-        aria-expanded={menuOpen}
-      >
-        <span className="menu-icon-bar" />
-        <span className="menu-icon-bar" />
-        <span className="menu-icon-bar" />
-      </button>
-
-      <div className={`nav-links ${menuOpen ? "nav-links--open" : ""}`}>
+      <div className="nav-links">
 
         {/* Se NÃO estiver na home, mostra o link HOME antes de tudo */}
         {!isHome && (
-          <a href="/" className="link" onClick={() => setMenuOpen(false)}>HOME</a>
+          <a href="/" className="link">HOME</a>
         )}
 
         {filteredPages.map((page) => (
-          <a
-            key={page.path}
-            href={page.path}
-            className="link"
-            onClick={() => setMenuOpen(false)}
-          >
+          <a key={page.path} href={page.path} className="link">
             {page.label}
           </a>
         ))}

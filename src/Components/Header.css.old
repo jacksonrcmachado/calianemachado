@@ -65,86 +65,46 @@ body {
   height: 87px; /* Altura do logo */
 }
 
-/* Botão do menu hamburguer (ícone) - escondido no desktop */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 44px;
-  height: 44px;
-  background-color: transparent;
-  border: 2px solid #FFFFFF; /* borda branca, seguindo o contorno do ícone de referência */
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10000;
-}
-
-.menu-icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background-color: #FFFFFF; /* barras brancas sobre o fundo rosa */
-  border-radius: 2px;
-}
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .header {
-    flex-direction: row; /* Mantém logo e botão na mesma linha */
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+    align-items: center; /* Alinha itens ao centro em telas pequenas */
     background-color: #E6007E; /* Garante que a cor de fundo seja mantida */
     width: 100%; /* Garante que o header ocupe toda a largura */
     height: auto; /* Ajusta a altura do cabeçalho para caber os elementos */
-    padding: 12px 16px;
-    position: relative;
   }
-
-  /* Mostra o botão hamburguer no mobile */
-  .menu-toggle {
-    display: flex;
-    order: 1;
-  }
-
-  .logo {
-    order: 2;
-    justify-content: flex-end;
-  }
-
-  .logo img {
-    height: 60px; /* Logo um pouco menor no mobile */
-  }
-
-  /* Menu escondido por padrão, aparece como dropdown ao abrir */
+  
   .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 0;
-    position: absolute;
-    top: 100%; /* logo abaixo do header */
-    left: 0;
-    background-color: #E6007E;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-    order: 3;
-  }
-
-  .nav-links--open {
-    display: flex;
+    width: 100%; /* Links ocupam 100% da largura */
+    justify-content: center; /* Distribui os links uniformemente */
+    margin-bottom: 16px; /* Adiciona margem inferior para espaçamento */
+    gap: 10px; /* Aumenta o espaçamento entre os links */
+    flex-wrap: wrap;
   }
 
   .link {
-    width: 100%;
+    flex: 45%; /* ADICIONE ESTA LINHA para ocupar metade da largura */
     text-align: center; /* Centraliza o texto */
-    padding: 14px 0;
-    font-size: 20px;
   }
 
-  .link:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  
+  .logo {
+    margin-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+
+  .logo img {
+    /* align-self: center; /* Centraliza o logo */
+    margin-left: 0px;
+    /* margin-left: 130px; /* Remove a margem à esquerda no modo responsivo */
+    /* padding-right: 0; /* Remove o padding à direita no modo responsivo */
+    margin-bottom: 16px; /* Adiciona margem inferior para alinhamento vertical */
+    /* justify-content: center; */
   }
 }
