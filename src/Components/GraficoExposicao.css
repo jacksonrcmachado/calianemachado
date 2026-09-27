@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;600;700&display=swap');
+
+.detalhe-container {
+  font-family: 'Open Sans', sans-serif;
+  padding: 40px 180px 60px 180px;
+}
+
+/* Logo/título gráfico do topo (peça "Contracultura") */
+.detalhe-titulo-grafico {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.detalhe-titulo-imagem {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Subtítulo do projeto */
+.detalhe-subtitulo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #E6007E;
+  margin: 0 0 30px 0;
+}
+
+/* Bloco de introdução: capa + texto */
+.detalhe-intro {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.detalhe-capa {
+  flex: 0 0 300px;
+}
+
+.detalhe-capa-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.detalhe-texto {
+  flex: 1;
+}
+
+.detalhe-paragrafo {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.detalhe-entregas-titulo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #E6007E;
+  margin: 20px 0 5px 0;
+}
+
+.detalhe-entregas-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000;
+}
+
+/* Galeria de peças do projeto */
+.detalhe-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.detalhe-galeria-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Rodapé da subpágina: logo + próximo */
+.detalhe-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.detalhe-logo {
+  width: 150px;
+  height: auto;
+}
+
+.detalhe-proximo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #E6007E;
+  text-decoration: none;
+}
+
+.detalhe-proximo:hover {
+  color: #c40068;
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+
+  .detalhe-container {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+
+  .detalhe-titulo-grafico {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .detalhe-subtitulo {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .detalhe-intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .detalhe-capa {
+    flex: none;
+    max-width: 280px;
+  }
+
+  .detalhe-entregas-lista {
+    text-align: center;
+  }
+
+  .detalhe-galeria {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .detalhe-rodape {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .detalhe-proximo {
+    font-size: 20px;
+  }
+
+  * {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}

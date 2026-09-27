@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <span>(12) 98151-9398</span>
         </a>
         <a href="https://www.linkedin.com/in/caliane-machado" target="_blank" rel="noopener noreferrer" className="footer-link">
-          <img src="/imagens/Home/Logo_Linkedin.png" alt="LinkedIn Logo" className="footer-icon" style={{ width: '24px', height: '24px' }} />
+          <img src="/imagens/Home/Logo_Linkedin.webp" alt="LinkedIn Logo" className="footer-icon" style={{ width: '24px', height: '24px' }} />
           <span>linkedin.com/in/caliane-machado</span>
         </a>
       </div>

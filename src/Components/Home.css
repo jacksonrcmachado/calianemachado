@@ -1,4 +1,9 @@
-/* Container principal */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;600;700&display=swap');
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
 .home-container {
   width: 100%;
   padding: 0;
@@ -6,39 +11,43 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Imagem de largura total */
+/* =========================
+   IMAGEM DE LARGURA TOTAL
+========================= */
 .full-width-image img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .full-width-image img {
-    height: 300px; /* Reduz a altura para telas menores */
-    /*margin-top: 75px; /* Adiciona espaçamento para evitar sobreposição com o header */
+    height: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .full-width-image img {
-    height: 200px; /* Reduz ainda mais a altura para telas pequenas */
-    /*margin-top: 30px; /* Adiciona espaçamento para evitar sobreposição com o header */
+    height: 200px;
   }
 }
 
-/* Título das seções */
+/* =========================
+   TÍTULO DAS SEÇÕES
+========================= */
 .section-title {
   font-family: 'Scheherazade New', serif;
-  font-weight: bold;
-  font-size: 80px;
+  font-weight: 700;
+  font-size: 96px;
   color: #E6007E;
   text-align: left;
   margin-top: 50px;
   margin-left: 135px;
 }
 
-/* Descrição das seções */
+/* =========================
+   DESCRIÇÃO DAS SEÇÕES
+========================= */
 .section-description {
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
@@ -49,43 +58,75 @@
   line-height: 1.6;
 }
 
-/* Imagens de retrato para a seção Projetos */
-.project-images {
+/* =========================
+     SEÇÃO GRÁFICO (ATUALIZADA)
+========================= */
+
+.chart-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 60px; /* espaço entre colunas */
+  margin-top: 40px;
   margin-left: 135px;
   margin-right: 135px;
-  flex-wrap: wrap;
 }
 
-.portrait-image {
-  width: 313px;
-  height: 440px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.double-images {
+.left-column{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 440px;
+  gap: 0px; /* espaço entre imagens */
+}
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* espaço entre imagens */
 }
 
-.portrait-image-small {
-  width: 313px;
-  height: 208px;
-  object-fit: cover;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* ===== TAMANHOS REAIS DAS IMAGENS ===== */
+
+/* Coluna esquerda */
+.img-left-1 {
+  width: 375px;
+  height: 527px;
+  object-fit: contain;
 }
 
-.portrait-image-small + .portrait-image-small {
-  margin-top: 24px;
+.img-left-2 {
+  width: 375px;
+  height: 648px;
+  object-fit: contain;
 }
 
-/* Imagens de paisagem para a seção Álbuns */
+/* Coluna direita */
+.img-right-1 {
+  width: 556px;
+  height: 371px;
+  object-fit: contain;
+}
+
+.img-right-2 {
+  width: 556px;
+  height: 371px;
+  object-fit: contain;
+}
+
+.img-right-3 {
+  width: 556px;
+  height: 313px;
+  object-fit: contain;
+}
+
+/* Borda e sombra iguais para todas */
+.portrait-image,
+.right-column img,
+.left-column img {
+  border-radius: 0px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* =========================
+     SEÇÃO ÁLBUNS
+========================= */
 .album-images {
   display: flex;
   justify-content: center;
@@ -102,13 +143,39 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout responsivo */
-@media (max-width: 768px) {
-  .portrait-image, .landscape-image {
-    width: 100%;
-    height: auto;
+/* =========================
+     SEÇÃO UX
+========================= */
+.ux-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.landscape-image-ux {
+  width: 937px;
+  height: 527px;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+     RESPONSIVIDADE GERAL
+========================= */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 72px;
   }
 
+  .section-description {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
   .section-title {
     font-size: 48px;
     margin-left: 20px;
@@ -121,23 +188,25 @@
     width: 90%;
   }
 
-  .project-images {
+  .chart-grid {
+    flex-direction: column;
+    align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .left-column img,
+  .right-column img,
+  .landscape-image,
+  .landscape-image-ux {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: none;
   }
 }
 
 @media (max-width: 480px) {
-  .project-images, .album-images {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .portrait-image, .landscape-image {
-    width: 100%;
-    height: auto;
-  }
-
   .section-title {
     font-size: 36px;
     margin-left: 10px;
@@ -150,8 +219,14 @@
     width: 100%;
   }
 
-  .project-images {
+  .chart-grid {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .album-images,
+  .ux-images {
+    flex-direction: column;
+    align-items: center;
   }
 }

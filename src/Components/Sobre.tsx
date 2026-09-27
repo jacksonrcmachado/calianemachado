@@ -30,20 +30,25 @@ const Sobre: React.FC = () => {
       {/* Coluna direita - foto + botão */}
       <div className="sobre-direita">
         <img
-          src="/imagens/Sobre/foto.jpg"
+          src="/imagens/Sobre/Caliane_Machado_Sobre.webp"
           alt="Caliane Machado"
           className="sobre-foto"
         />
         <div className="sobre-curriculo">
           <h2>CONHEÇA MEU CURRÍCULO.</h2>
-          <button className="sobre-botao">VEJA MAIS</button>
+          <button
+            className="sobre-botao"
+            onClick={() => window.open('/pdf/Sobre/Curriculo_Caliane_Machado.pdf', '_blank')}
+          >
+            VEJA MAIS
+          </button>
         </div>
       </div>
 
       {/* Logo no final da página */}
       <div className="sobre-logo-container">
         <img
-          src="/imagens/Sobre/logo.png"
+          src="/imagens/logo_Prancheta.webp"
           alt="Logo"
           className="sobre-logo"
         />

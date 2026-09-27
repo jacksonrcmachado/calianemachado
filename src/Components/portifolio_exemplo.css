@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&display=swap');
+
+/* ==========================
+   BANNER
+========================== */
+.ux-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ux-banner {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================
+   LAYOUT EM DUAS COLUNAS
+========================== */
+.ux-conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; /* alinha imagem e texto pelo topo */
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+/* COLUNA ESQUERDA (Título + logo) */
+.ux-col-esquerda {
+  width: 40%;
+  text-align: left;     /* agora o título fica alinhado à esquerda */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* garante que imagem também siga o alinhamento */
+}
+
+
+/* COLUNA DIREITA (Texto) */
+.ux-col-direita {
+  width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 300px; /* Ajuste fino para alinhar com a imagem */
+}
+
+/* ==========================
+   TIPOGRAFIA
+========================== */
+.ux-titulo-lateral {
+  font-family: 'Scheherazade New', serif;
+  font-size: 96px;
+  font-weight: 700;
+  color: #E6007E;
+  margin-bottom: 20px;
+}
+
+.ux-logo {
+  width: 405px;
+  height: 405px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+/* Texto principal */
+.ux-texto {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Subtítulo Entregas */
+.ux-entregas h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #E6007E;
+  margin-bottom: 15px;
+}
+
+.ux-entregas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ux-entregas li {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+/* ==========================
+   SEÇÃO "CONHEÇA UM POUCO MAIS DO PROJETO"
+========================== */
+.ux-secao-projeto {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.ux-secao-titulo {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #E6007E;
+  margin-bottom: 60px;
+}
+
+/* GRID (3 colunas) */
+.ux-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.ux-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Títulos das colunas */
+.ux-item-titulo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #E6007E;
+  margin-bottom: 20px;
+}
+
+/* Imagens */
+.ux-item-img {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+/* Botão */
+.ux-botao {
+  width: 160px;
+  height: 68px;
+  background-color: rgba(230, 0, 126, 0.5); /* 50% opacidade */
+  color: #fff;
+  border: none;
+  border-radius: 34px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ux-botao:hover {
+  background-color: rgba(230, 0, 126, 0.8);
+}
+
+/* =========================
+   NAVEGAÇÃO FINAL
+========================= */
+.ux-navegacao {
+  width: 100%;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;   /* ← ESSENCIAL */
+  width: 100%;
+  margin-top: 40px;     /* ajuste se precisar */
+}
+
+/* LOGO REDUZIDO -> MAIS PARA A DIREITA */
+.ux-borboleta {
+  position: absolute;
+  top: -40px;
+  left: 200px;        /* NOVO local — 130px da esquerda */
+  width: 260px;
+  opacity: 0.5;
+  transform: rotate(6deg);
+  z-index: 1;
+  pointer-events: none;  /* <-- NÃO captura cliques! */
+  position: absolute;
+}
+
+/* LOGO PRANCHETA CENTRALIZADO E ABAIXO DA BORBOLETA */
+.ux-logo-central {
+  width: 380px;
+  position: relative;
+  z-index: 2;
+  margin-top: 220px;  /* empurra para baixo da borboleta */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BOTÕES -> MESMO EIXO HORIZONTAL DO LOGO PRANCHETA */ 
+.ux-nav-botoes { 
+    width: 100%; 
+    max-width: 1100px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute; 
+    top: 60%; 
+    /* transform: translateY(-50%); /* coloca na MESMA ALTURA do logo */ 
+    padding: 0 60px; z-index: 3; 
+}
+
+.ux-nav-botao {
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0);
+  color: #e6007e;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ux-nav-botao:hover {
+  color: rgba(230, 0, 126, 0.7);
+}
+
+/* ==========================
+   RESPONSIVO COMPLETO
+========================== */
+
+/* TABLET / TELAS MÉDIAS */
+@media (max-width: 1100px) {
+
+  /* ====== CONTEÚDO PRINCIPAL ====== */
+  .ux-conteudo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .ux-col-esquerda,
+  .ux-col-direita {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ux-col-direita {
+    margin-top: 0;
+  }
+
+  .ux-titulo-lateral {
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .ux-logo {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .ux-texto {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* ====== GRID ====== */
+  .ux-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .ux-item {
+    text-align: center;
+    align-items: center;
+  }
+
+  /* ====== NAVEGAÇÃO FINAL ====== */
+  .ux-navegacao {
+    margin-top: 120px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Borboleta centralizada e MAIS BAIXA */
+  .ux-borboleta {
+    position: absolute;
+    top: 20px; /* ↓ desceu */
+    left: 50%;
+    transform: translateX(-50%) rotate(6deg);
+    width: 220px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Logo alinhado e com espaçamento ajustado para a borboleta */
+  .ux-logo-central {
+    width: 300px;
+    position: relative;
+    z-index: 2;
+    margin-top: 260px; /* antes 220px — compensação da borboleta */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BOTÕES — SEM ABSOLUTO, EM COLUNA E CENTRALIZADOS */
+  .ux-nav-botoes {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* concentra no centro */
+    top: 0;
+    transform: none;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    padding: 0;
+    z-index: 3;
+  }
+
+  .ux-nav-botao {
+    font-size: 40px;
+    padding: 12px 30px;
+    background: none;
+    color: #e6007e;
+  }
+}
+
+
+/* CELULAR / TELAS PEQUENAS */
+@media (max-width: 600px) {
+
+  .ux-banner {
+    height: 260px;
+  }
+
+  .ux-titulo-lateral {
+    font-size: 50px;
+  }
+
+  .ux-logo {
+    width: 220px;
+  }
+
+  .ux-texto {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .ux-entregas h2 {
+    font-size: 26px;
+  }
+
+  /* Borboleta menor e baixinha */
+  .ux-borboleta {
+    width: 180px;
+    top: 25px;
+  }
+
+  .ux-logo-central {
+    width: 240px;
+    margin-top: 230px;
+  }
+
+  .ux-nav-botao {
+    font-size: 32px;
+    padding: 10px 20px;
+  }
+}

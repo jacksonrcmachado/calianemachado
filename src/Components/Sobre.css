@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;600;700&display=swap');
+
 .sobre-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px 80px;
+  /* padding: 40px 0px; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,25 +14,27 @@
 .sobre-texto {
   flex: 1;
   min-width: 300px;
-  margin-right: 50px;
-  margin-top: 130px;
+  margin-right: 49px;
+  margin-top: 0px;
+  padding-left: 180px;
 }
 
 .sobre-titulo {
   font-family: 'Scheherazade New', serif;
-  font-size: 55px;
-  font-weight: bold;
+  font-size: 96px;
+  font-weight: 700;
   color: #E6007E;
-  margin-bottom: 40px;
-  margin-left: 110px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   font-style: bolt;
+  margin-top: 80px;
 }
 
 .sobre-paragrafo {
   font-size: 24px;
   line-height: 1.6;
   margin-bottom: 15px;
-  margin-left: 110px;
+  margin-left: 0px;
   color: #000;
 }
 
@@ -39,35 +44,47 @@
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-end;   /* <<< cola tudo à direita */
+  justify-content: flex-start; /* garante alinhamento no topo */
+  margin-top: 0; /* garante que nada empurre a imagem para baixo */
+  padding-top: 0; /* segurança extra */
 }
 
 .sobre-foto {
-  width: 350px;
-  border-radius: 4px;
-  margin-bottom: 20px;
+  width: 560px;
+  height: 775px;
+  object-fit: cover; /* mantém proporção preenchendo sem distorcer */
+  border-radius: 0px;
 }
 
 .sobre-curriculo {
+  /* text-align: center;
+  margin: 20px 0; */
+  width: 560px;       /* igual à largura da foto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza h2 e o botão */
+  justify-content: center;
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 
 .sobre-curriculo h2 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 600;
   color: #E6007E;
   margin-bottom: 10px;
 }
 
 .sobre-botao {
-  background-color: #E6007E;
+  background-color: #e6007f80;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 20px;
+  padding: 20px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 80px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -86,27 +103,94 @@
 }
 
 .sobre-logo {
-  width: 200px;
+  width: 300px;
 }
 
-/* Responsivo */
+/* RESPONSIVIDADE MOBILE */
 @media (max-width: 768px) {
+
+  /* Container geral */
   .sobre-container {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px !important;
+    text-align: center;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  /* Título */
+  .sobre-titulo {
+    font-size: 48px;
+    margin: 0 auto !important;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  /* Parágrafos */
+  .sobre-paragrafo {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px auto !important;
+    padding: 0 !important;
+    width: 100% !important;
     text-align: center;
   }
 
+  /* Container de texto */
   .sobre-texto {
-    margin-right: 0;
+    width: 100% !important;
+    max-width: 600px;
+    margin: 0 auto !important;
+    padding: 0 !important;
   }
 
+  /* Coluna direita */
+  .sobre-direita {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    margin-top: 30px;
+  }
+
+  /* Foto */
   .sobre-foto {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    border-radius: 4px;
+  }
+
+  /* Currículo */
+  .sobre-curriculo h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .sobre-botao {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 18px;
+  }
+
+  /* Logo */
+  .sobre-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
   }
 
   .sobre-logo {
     width: 150px;
+  }
+
+  /* Segurança extra contra deslocamento lateral */
+  * {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body, html {
+    overflow-x: hidden;
   }
 }

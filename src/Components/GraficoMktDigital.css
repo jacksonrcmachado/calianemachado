@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;600;700&display=swap');
+
+.mkt-container {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Imagem única do topo (1440 x 500) */
+.mkt-topo {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.mkt-topo-imagem {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 500;
+  object-fit: cover;
+  display: block;
+}
+
+.mkt-conteudo {
+  padding: 60px 180px;
+}
+
+.mkt-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #E6007E;
+  margin: 0 0 30px 0;
+}
+
+.mkt-paragrafo {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  margin: 0 0 40px 0;
+  max-width: 480px;
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Mockup com as peças para redes sociais */
+.mkt-mockup-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.mkt-mockup-imagem {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Rodapé: anterior + logo + próximo */
+.mkt-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.mkt-logo {
+  width: 150px;
+  height: auto;
+}
+
+.mkt-anterior,
+.mkt-proximo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #E6007E;
+  text-decoration: none;
+}
+
+.mkt-anterior:hover,
+.mkt-proximo:hover {
+  color: #C40068;
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+
+  .mkt-conteudo {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+
+  .mkt-titulo {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .mkt-paragrafo {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+
+  .mkt-rodape {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mkt-anterior,
+  .mkt-proximo {
+    font-size: 20px;
+  }
+
+  * {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}

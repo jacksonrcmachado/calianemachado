@@ -1,44 +1,89 @@
 import React from "react";
-import "./Home.css"; // Arquivo CSS para estilos
+import { useNavigate } from "react-router-dom"; // ⬅ Importante
+import { Link } from 'react-router-dom';
+import "./Home.css";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate(); // ⬅ Hook para navegação
+
   return (
     <div className="home-container">
+
       {/* Imagem principal */}
       <div className="full-width-image">
-        <img src="/imagens/Home/Capa.jpg" alt="Capa" />
+        <img src="/imagens/Home/Capa.webp" alt="Capa" />
       </div>
 
-      {/* Seção Projetos */}
-      <section className="projects-section">
-        <h1 className="section-title">Projetos</h1>
+      {/* Seção Gráfico */}
+      <section className="chart-section">
+        <h1 className="section-title">Gráfico</h1>
         <p className="section-description">
           Diagramação e desenvolvimento de materiais para uso impresso e digital.
         </p>
-        <div className="project-images">
-          <img
-            src="/imagens/Home/Bea_Feitler_Cartaz.jpg"
-            alt="Bea Feitler Cartaz"
-            className="portrait-image"
-          />
 
-          <div className="double-images">
+        <div className="chart-grid">
+
+          {/* Coluna Esquerda */}
+          <div className="chart-column left-column">
+            <Link to="/graficoexposicao">
             <img
-              src="/imagens/Home/Cartoes_Identificacao.png"
-              alt="Cartões de Identificação"
-              className="portrait-image-small"
-            />
+              src="/imagens/Home/Bea_Feitler_Cartaz.webp"
+              alt="Bea Feitler Cartaz"
+              className="img-left-1"/>
+            </Link>
+
             <img
-              src="/imagens/Home/Planner.jpg"
-              alt="Planner"
-              className="portrait-image-small"
+              src="/imagens/Home/Trabalho_Final.webp"
+              alt="Trabalho Final"
+              className="img-left-2"
             />
           </div>
 
+          {/* Coluna Direita */}
+          <div className="chart-column right-column">
+           <Link to="/graficopapelaria">
+            <img
+              src="/imagens/Home/Cartoes_Identificacao.webp"
+              alt="Cartões de Identificação"
+              className="img-right-1"/>
+            </Link>
+
+            <Link to="/graficominhamarca">
+            <img
+              src="/imagens/Home/Planner.webp"
+              alt="Planner"
+              className="img-right-2"/>
+            </Link>
+
+            <Link to="/graficoidvisual">
+            <img
+              src="/imagens/grafico/IDRaquel/IDRaquel_Capa.webp"              
+              alt="Capa Raquel"
+              className="img-right-3"
+            />
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Seção UX */}
+      <section className="ux-section">
+        <h1 className="section-title">UX</h1>
+        <p className="section-description">
+          Soluções eficazes para dores reais.
+        </p>
+
+        <div className="ux-images">
           <img
-            src="/imagens/Home/Trabalho_Final.jpg"
-            alt="Ilustração Verão"
-            className="portrait-image"
+            src="/imagens/Home/Capa_CASE-Learn-Quest.webp"
+            alt="CASE-Learn-Quest Capa"
+            className="landscape-image-ux"
+            style={{ cursor: "pointer" }}         // ⬅ Estilo de clique
+            onClick={() => {
+              navigate("/ux");
+              window.scrollTo(0, 0);
+            }}       // ⬅ Navegação ao clicar
           />
         </div>
       </section>
@@ -49,26 +94,55 @@ const Home: React.FC = () => {
         <p className="section-description">
           Momentos especiais registrados de forma única.
         </p>
+
         <div className="album-images">
           <img
-            src="/imagens/Home/Janaina_Capa.png"
+            src="/imagens/Home/Janaina_Capa.webp"
             alt="Janaína Capa"
             className="landscape-image"
           />
           <img
-            src="/imagens/Home/Raquel-Saulo_Capa.png"
-            alt="Raquel e Saulo Capa"
+            src="/imagens/Home/Ianna_Capa.webp"
+            alt="Ianna Capa"
             className="landscape-image"
           />
         </div>
+
         <div className="album-images">
           <img
-            src="/imagens/Home/Marina_Capa.png"
+            src="/imagens/Home/Marina_Capa.webp"
             alt="Marina Capa"
+            className="landscape-image"
+          />
+          <img
+            src="/imagens/Home/Marina_Formatura_Capa.webp"
+            alt="Marina Formatura Capa"
+            className="landscape-image"
+          />
+        </div>
+
+        <div className="album-images">
+          <img
+            src="/imagens/Home/Raquel-Saulo_Capa.webp"
+            alt="Raquel e Saulo Capa"
+            className="landscape-image"
+          />
+          <img
+            src="/imagens/Home/Debora_Thiago_Capa.webp"
+            alt="Débora e Thiago Capa"
+            className="landscape-image"
+          />
+        </div>
+
+        <div className="album-images">
+          <img
+            src="/imagens/Home/Antonio_Capa.webp"
+            alt="Antônio Capa"
             className="landscape-image"
           />
         </div>
       </section>
+
     </div>
   );
 };

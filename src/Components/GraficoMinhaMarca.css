@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;600;700&display=swap');
+
+.marca-container {
+  font-family: 'Open Sans', sans-serif;
+  --rosa-principal: #E6007E;
+  --rosa-escuro: #C40068;
+}
+
+/* Carrossel do topo (encostado no header, sem espaço em branco) */
+.marca-carrossel-topo {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.marca-carrossel-imagem {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 500;
+  object-fit: cover;
+  display: block;
+}
+
+.marca-carrossel-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.marca-carrossel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+}
+
+.marca-carrossel-dot-ativo {
+  background-color: #fff;
+}
+
+.marca-intro-container {
+  padding: 20px 180px 60px 180px;
+}
+
+.marca-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--rosa-principal);
+  margin: 0 0 30px 0;
+}
+
+.marca-intro {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.marca-logo-media {
+  flex: 0 0 260px;
+  height: 260px;
+}
+
+.marca-paragrafo {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  margin: 0;
+}
+
+/* Imagem única: Conceito + Construção do símbolo + Valores + Tipografia/Cores + Aplicação */
+.marca-conteudo-imagem {
+  width: 100%;
+}
+
+.marca-conteudo-imagem-item {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.marca-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 50px 0;
+}
+
+.marca-logo-rodape {
+  width: 150px;
+  height: auto;
+}
+
+.marca-anterior,
+.marca-proximo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--rosa-principal);
+  text-decoration: none;
+}
+
+.marca-anterior:hover,
+.marca-proximo:hover {
+  color: var(--rosa-escuro);
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+
+  .marca-carrossel-dots {
+    bottom: 8px;
+  }
+
+  .marca-carrossel-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .marca-intro-container {
+    padding: 20px !important;
+  }
+
+  .marca-intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .marca-logo-media {
+    flex: none;
+    width: 180px;
+  }
+
+  .marca-rodape {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .marca-anterior,
+  .marca-proximo {
+    font-size: 20px;
+  }
+
+  * {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+}
