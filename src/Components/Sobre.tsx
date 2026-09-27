@@ -38,7 +38,7 @@ const Sobre: React.FC = () => {
           <h2>CONHEÇA MEU CURRÍCULO.</h2>
           <button
             className="sobre-botao"
-            onClick={() => window.open('/pdf/Sobre/Curriculo_Caliane_Machado.pdf', '_blank')}
+            onClick={() => window.open('https://pub-14a07661c1404e41b7d32c17a0cf81c4.r2.dev/pdf/Sobre/Curriculo_Caliane_Machado.pdf', '_blank')}
           >
             VEJA MAIS
           </button>
