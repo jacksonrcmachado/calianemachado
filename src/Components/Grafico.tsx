@@ -10,7 +10,7 @@ const Grafico: React.FC = () => {
 
         <div className="projetos-borboleta-container">
           <img
-            src={`${process.env.REACT_APP_ASSETS_URL}/imagens/Logo_reduzido.webp`}
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Logo_reduzido.webp`)}
             alt="Logo"
             className="projetos-borboleta"
           />
@@ -24,7 +24,7 @@ const Grafico: React.FC = () => {
             <Link to="/graficoexposicao">
             <img
               className="projeto-imagem"
-              src={`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/exposicao/caliane_machado_cartaz_Cartaz 01.webp`}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/exposicao/caliane_machado_cartaz_Cartaz 01.webp`)}
               alt="Exposição Bea Feitler"
             />
             </Link>
@@ -37,7 +37,7 @@ const Grafico: React.FC = () => {
             <Link to="/graficoilustracao">
             <img
               className="projeto-imagem"
-              src={`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/ilustracoes/Ilustracoes.webp`}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/ilustracoes/Ilustracoes.webp`)}
               alt="Ilustrações - Beatriz Milhazes"
             />
             </Link>
@@ -50,7 +50,7 @@ const Grafico: React.FC = () => {
            <Link to="/graficominhamarca">
             <img
               className="projeto-imagem"
-              src={`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
               alt="Minha marca"
             />
             </Link>
@@ -63,7 +63,7 @@ const Grafico: React.FC = () => {
            <Link to="/graficopapelaria">
             <img
               className="projeto-imagem"
-              src={`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/Papelaria/Convite.webp`}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/Papelaria/Convite.webp`)}
               alt="Papelaria para casamento"
             />
             </Link>
@@ -76,7 +76,7 @@ const Grafico: React.FC = () => {
             <Link to="/graficomktdigital">
             <img
               className="projeto-imagem"
-              src={`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/MKTDigital/Post6.webp`}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/MKTDigital/Post6.webp`)}
               alt="Marketing Digital"
             />
             </Link>
@@ -89,7 +89,7 @@ const Grafico: React.FC = () => {
             <Link to="/graficoidvisual">
             <img
               className="projeto-imagem"
-              src={`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/IDRaquel/IDRaquel_Capa.webp`}
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/grafico/IDRaquel/IDRaquel_Capa.webp`)}
               alt="Identidade Visual"
             />
             </Link>
@@ -100,7 +100,7 @@ const Grafico: React.FC = () => {
       <div className="projetos-logo-container">
         <img
           className="projetos-logo"
-          src={`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`}
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
           alt="Caliane Machado Design Gráfica"
         />
       </div>
