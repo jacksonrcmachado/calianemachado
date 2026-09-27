@@ -3,10 +3,10 @@ import "./GraficoMinhaMarca.css"
 
 // Imagens do carrossel do topo (troque pelos caminhos reais)
 const bannerImagens: string[] = [
-  "/imagens/Grafico/MinhaMarca/Capas-06.webp",
-  "/imagens/Grafico/MinhaMarca/Capa-05.webp",
-  "/imagens/Grafico/MinhaMarca/Capas-07.webp",
-  "/imagens/Grafico/MinhaMarca/Capas-08.webp",
+  encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MinhaMarca/Capas-06.webp`),
+  encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MinhaMarca/Capa-05.webp`),
+  encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MinhaMarca/Capas-07.webp`),
+  encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MinhaMarca/Capas-08.webp`),
 ];
 
 const GraficoMinhaMarca: React.FC = () => {
@@ -51,7 +51,7 @@ const GraficoMinhaMarca: React.FC = () => {
         <div className="marca-intro">
           <img
             className="marca-logo-media"
-            src="/imagens/logo_Prancheta.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
             alt="Caliane Machado Design Gráfica"
           />
           <p className="marca-paragrafo">
@@ -68,7 +68,7 @@ const GraficoMinhaMarca: React.FC = () => {
       <div className="marca-conteudo-imagem">
         <img
           className="marca-conteudo-imagem-item"
-          src="/imagens/Grafico/MinhaMarca/Identidade_da_Marca.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MinhaMarca/Identidade_da_Marca.webp`)}
           alt="Conceito, construção do símbolo, valores, tipografia, cores e aplicação da marca"
         />
       </div>
@@ -80,7 +80,7 @@ const GraficoMinhaMarca: React.FC = () => {
         </a>
         <img
           className="marca-logo-rodape"
-          src="/imagens/logo_Prancheta.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
           alt="Caliane Machado Design Gráfica"
         />
         <a href="/GraficoPapelaria" className="marca-proximo">

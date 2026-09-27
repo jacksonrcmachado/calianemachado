@@ -7,7 +7,7 @@ const GraficoMktDigital: React.FC = () => {
       <div className="mkt-topo">
         <img
           className="mkt-topo-imagem"
-          src="/imagens/grafico/MKTDigital/CAPAMKT.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MKTDigital/CAPAMKT.webp`)}
           alt="Peças de destaque - Espaço Vida e Beleza"
         />
       </div>
@@ -22,21 +22,21 @@ const GraficoMktDigital: React.FC = () => {
         <div className="mkt-mockup-container">
           <img
             className="mkt-mockup-imagem"
-            src="/imagens/grafico/MKTDigital/Posts.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/MKTDigital/Posts.webp`)}
             alt="Mockup das peças para redes sociais - Espaço Vida e Beleza"
           />
         </div>
 
         <div className="mkt-rodape">
-          <a href="/graficopapelaria" className="mkt-anterior">
+          <a href="/Graficopapelaria" className="mkt-anterior">
             ANTERIOR
           </a>
           <img
             className="mkt-logo"
-            src="/imagens/logo_Prancheta.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
             alt="Caliane Machado Design Gráfica"
           />
-          <a href="/graficoidvisual" className="mkt-proximo">
+          <a href="/Graficoidvisual" className="mkt-proximo">
             PRÓXIMO
           </a>
         </div>

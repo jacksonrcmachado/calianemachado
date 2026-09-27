@@ -6,7 +6,7 @@ const GraficoExposicao: React.FC = () => {
     <div className="detalhe-container">
       <div className="detalhe-titulo-grafico">
         <img
-          src="/imagens/grafico/Exposicao/CapapanoramicaExposicao.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/CapapanoramicaExposicao.webp`)}
           alt="Contracultura"
           className="detalhe-titulo-imagem"
         />
@@ -17,7 +17,7 @@ const GraficoExposicao: React.FC = () => {
       <div className="detalhe-intro">
         <div className="detalhe-capa">
           <img
-            src="/imagens/grafico/Exposicao/caliane_machado_cartaz_Cartaz 01.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/caliane_machado_cartaz_Cartaz 01.webp`)}
             alt="Cartaz Exposição Bea Feitler"
             className="detalhe-capa-imagem"
           />
@@ -47,20 +47,20 @@ const GraficoExposicao: React.FC = () => {
       </div>
 
       <div className="detalhe-galeria">
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Banner.webp" alt="Banner Exposição Bea Feitler" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Midia.webp" alt="Peça para redes sociais Exposição Bea Feitler" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Folder Final.webp" alt="Folder Exposição Bea Feitler" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Ingresso.webp" alt="Ingresso Exposição Bea Feitler" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Camiseta_rosa.webp" alt="Camiseta Exposição Bea Feitler - foto 1" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Camiseta_verde.webp" alt="Camiseta Exposição Bea Feitler - foto 2" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Ecobag_rosa.webp" alt="Sacola brinde Exposição Bea Feitler - foto 1" />
-        <img className="detalhe-galeria-imagem" src="/imagens/grafico/Exposicao/Ecobag_verde.webp" alt="Sacola brinde Exposição Bea Feitler - foto 2" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Banner.webp`)} alt="Banner Exposição Bea Feitler" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Midia.webp`)} alt="Peça para redes sociais Exposição Bea Feitler" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Folder Final.webp`)} alt="Folder Exposição Bea Feitler" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Ingresso.webp`)} alt="Ingresso Exposição Bea Feitler" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Camiseta_rosa.webp`)} alt="Camiseta Exposição Bea Feitler - foto 1" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Camiseta_verde.webp`)} alt="Camiseta Exposição Bea Feitler - foto 2" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Ecobag_rosa.webp`)} alt="Sacola brinde Exposição Bea Feitler - foto 1" />
+        <img className="detalhe-galeria-imagem" src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Exposicao/Ecobag_verde.webp`)} alt="Sacola brinde Exposição Bea Feitler - foto 2" />
       </div>
 
       <div className="detalhe-rodape">
         <img
           className="detalhe-logo"
-          src="/imagens/logo_Prancheta.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
           alt="Caliane Machado Design Gráfica"
         />
         <a href="/graficoilustracao" className="detalhe-proximo">

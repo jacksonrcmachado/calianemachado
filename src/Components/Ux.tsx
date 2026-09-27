@@ -8,7 +8,7 @@ const Ux: React.FC = () => {
           BANNER
       ======================= */}
       <img
-        src="/imagens/Ux/UX_Capa.webp"
+        src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/UX_Capa.webp`)}
         alt="Banner UX"
         className="ux-banner"
       />
@@ -22,7 +22,7 @@ const Ux: React.FC = () => {
           <h1 className="ux-titulo-lateral">UX</h1>
 
           <img
-            src="/imagens/Ux/logo.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/logo.webp`)}
             alt="Logo UX"
             className="ux-logo"
           />
@@ -79,7 +79,7 @@ const Ux: React.FC = () => {
             <h3 className="ux-item-titulo">APRESENTAÇÃO</h3>
 
             <img
-              src="/imagens/Ux/apresentacao.jpg"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/apresentacao.jpg`)}
               alt="Apresentação"
               className="ux-item-img"
             />
@@ -98,7 +98,7 @@ const Ux: React.FC = () => {
             <h3 className="ux-item-titulo">PROTÓTIPO</h3>
 
             <img
-              src="/imagens/Ux/prototipo.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/prototipo.webp`)}
               alt="Protótipo"
               className="ux-item-img"
             />
@@ -117,7 +117,7 @@ const Ux: React.FC = () => {
             <h3 className="ux-item-titulo">DESIGN SYSTEM</h3>
 
             <img
-              src="/imagens/Ux/logo.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Ux/logo.webp`)}
               alt="Design System"
               className="ux-item-img"
             />
@@ -139,14 +139,14 @@ const Ux: React.FC = () => {
       <div className="ux-navegacao">
         {/* Imagem Borboleta */}
         <img
-          src="/imagens/Logo_reduzido.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Logo_reduzido.webp`)}
           alt="Borboleta Rosa"
           className="ux-borboleta"
         />
 
         {/* Logo Central */}
         <img
-          src="/imagens/logo_Prancheta.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
           alt="Logo Central"
           className="ux-logo-central"
         />

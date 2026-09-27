@@ -4,40 +4,40 @@ import "./GraficoIDVisual.css";
 // As 8 imagens do corpo da página (cada uma já inclui a faixa de padronagem)
 const secoesImagens: { src: string; alt: string }[] = [
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_Conceito.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Conceito.webp`),
     alt: "Conceito e Valores - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel Navarro_CosntrucaodoSímbolo.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Cosntrucao do Simbolo.webp`),
     alt: "Construção do Símbolo - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_Logotipo.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Logotipo.webp`),
     alt: "Logotipo - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_LogotipoReduzido.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Logotipo reduzido.webp`),
     alt: "Logotipo reduzido - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_Margem.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Margem de segurança.webp`),
     alt: "Margem de segurança - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_Cores_Tipografia.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Cores - Tipografia.webp`),
     alt: "Cores e Tipografia - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_Padronagem.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Padronagem.webp`),
     alt: "Padronagem - Raquel Navarro",
   },
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquela_Usos.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Usos do logotipo.webp`),
     alt: "Padronagem - Raquel Navarro",
   },
   
   {
-    src: "/imagens/grafico/IDRaquel/IDRaquel_Aplicacao.webp",
+    src: encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Aplicacao.webp`),
     alt: "Aplicações - Raquel Navarro",
   },
 ];
@@ -47,7 +47,7 @@ const GraficoIDVisual: React.FC = () => {
     <div className="idvisual-container">
       <img
         className="idvisual-banner"
-        src="/imagens/grafico/IDRaquel/Capa.webp"
+        src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/Capa.webp`)}
         alt="Identidade Visual - Raquel Navarro"
       />
 
@@ -57,7 +57,7 @@ const GraficoIDVisual: React.FC = () => {
         <div className="idvisual-intro">
           <img
             className="idvisual-intro-logo"
-            src="/imagens/grafico/IDRaquel/IDRaquel_Logo.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/IDRaquel/IDRaquel_Logo.webp`)}
             alt="Logotipo Raquel Navarro"
           />
           <div className="idvisual-texto">
@@ -108,21 +108,21 @@ const GraficoIDVisual: React.FC = () => {
         <div className="idvisual-borboleta-container">
           <img
             className="idvisual-borboleta"
-            src="/imagens/Logo_reduzido.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Logo_reduzido.webp`)}
             alt="Borboleta decorativa"
           />
         </div>
 
         <div className="idvisual-rodape">
-          <a href="/graficomktdigital" className="idvisual-anterior">
+          <a href="/Graficomktdigital" className="idvisual-anterior">
             ANTERIOR
           </a>
           <img
             className="idvisual-logo-rodape"
-            src="/imagens/logo_Prancheta.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
             alt="Caliane Machado Design Gráfica"
           />
-          <a href="/grafico" className="idvisual-proximo">
+          <a href="/Grafico" className="idvisual-proximo">
             VOLTAR
           </a>
         </div>

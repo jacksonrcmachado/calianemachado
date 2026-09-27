@@ -11,7 +11,7 @@ const Header = () => {
         <a href="#" className="link">PROJETOS</a>
       </div>
       <div className="logo">
-        <img src="/imagens/LogoBranco-02.png" alt="Logo" />
+        <img src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/LogoBranco-02.png`)} alt="Logo" />
       </div>
     </header>
   );

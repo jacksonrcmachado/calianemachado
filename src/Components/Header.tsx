@@ -38,7 +38,7 @@ const Header = () => {
       </div>
 
       <div className="logo">
-        <img src="/imagens/LogoBranco-02.webp" alt="Logo" />
+        <img src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/LogoBranco-02.webp`)} alt="Logo" />
       </div>
     </header>
   );

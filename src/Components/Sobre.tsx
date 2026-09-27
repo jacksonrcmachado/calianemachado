@@ -30,7 +30,7 @@ const Sobre: React.FC = () => {
       {/* Coluna direita - foto + botão */}
       <div className="sobre-direita">
         <img
-          src="/imagens/Sobre/Caliane_Machado_Sobre.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Sobre/Caliane_Machado_Sobre.webp`)}
           alt="Caliane Machado"
           className="sobre-foto"
         />
@@ -48,7 +48,7 @@ const Sobre: React.FC = () => {
       {/* Logo no final da página */}
       <div className="sobre-logo-container">
         <img
-          src="/imagens/logo_Prancheta.webp"
+          src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
           alt="Logo"
           className="sobre-logo"
         />

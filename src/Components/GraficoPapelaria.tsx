@@ -6,7 +6,7 @@ const GraficoPapelaria: React.FC = () => {
     <div className="papelaria-container">
       <img
         className="papelaria-banner"
-        src="/imagens/grafico/Papelaria/CapapanoramicaRaqueleSaulo.webp"
+        src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/CapapanoramicaRaqueleSaulo.webp`)}
         alt="Papelaria para casamento - Raquel & Saulo"
       />
 
@@ -17,7 +17,7 @@ const GraficoPapelaria: React.FC = () => {
           <div className="papelaria-capa">
             <img
               className="papelaria-capa-imagem"
-              src="/imagens/grafico/Papelaria/SAVE.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/SAVE.webp`)}
               alt="Save the date digital - Raquel & Saulo"
             />
           </div>
@@ -58,27 +58,27 @@ const GraficoPapelaria: React.FC = () => {
         <div className="papelaria-galeria" id="galeria-papelaria">
           <img
             className="papelaria-galeria-imagem"
-            src="/imagens/grafico/Papelaria/Convite.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/Convite.webp`)}
             alt="Convite e envelope - Raquel & Saulo"
           />
           <img
             className="papelaria-galeria-imagem"
-            src="/imagens/grafico/Papelaria/Cartões de Identificação.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/Cartões de Identificação.webp`)}
             alt="Identificação para mesas - Raquel & Saulo"
           />
           <img
             className="papelaria-galeria-imagem"
-            src="/imagens/grafico/Papelaria/Xicara.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/Xicara.webp`)}
             alt="Caneca personalizada - Raquel & Saulo"
           />
           <img
             className="papelaria-galeria-imagem"
-            src="/imagens/grafico/Papelaria/QUADRO.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/QUADRO.webp`)}
             alt="Chalkboord Bem-vindos - Raquel & Saulo"
           />
           <img
             className="papelaria-galeria-imagem"
-            src="/imagens/grafico/Papelaria/Capa frente e Verso Rosa.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Papelaria/Capa frente e Verso Rosa.webp`)}
             alt="Capa do álbum - Raquel & Saulo"
           />
           
@@ -87,21 +87,21 @@ const GraficoPapelaria: React.FC = () => {
         <div className="papelaria-borboleta-container">
           <img
             className="papelaria-borboleta"
-            src="/imagens/Logo_reduzido.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Logo_reduzido.webp`)}
             alt="Borboleta decorativa"
           />
         </div>
 
         <div className="papelaria-rodape">
-          <a href="/graficominhamarca" className="papelaria-anterior">
+          <a href="/Graficominhamarca" className="papelaria-anterior">
             ANTERIOR
           </a>
           <img
             className="papelaria-logo"
-            src="/imagens/logo_Prancheta.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
             alt="Caliane Machado Design Gráfica"
           />
-          <a href="/graficomktdigital" className="papelaria-proximo">
+          <a href="/Graficomktdigital" className="papelaria-proximo">
             PRÓXIMO
           </a>
         </div>

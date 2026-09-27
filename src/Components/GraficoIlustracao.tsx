@@ -6,7 +6,7 @@ const GraficoIlustracao: React.FC = () => {
     <div className="ilustracoes-container">
       <img
         className="ilustracoes-banner"
-        src="/imagens/Grafico/Ilustracoes/Capa_Panorâmica_Ilustração.webp"
+        src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Ilustracoes/Capa_Panorâmica_Ilustração.webp`)}
         alt="Ilustrações Beatriz Milhazes - As quatro estações"
       />
 
@@ -17,7 +17,7 @@ const GraficoIlustracao: React.FC = () => {
           <div className="ilustracoes-capa">
             <img
               className="ilustracoes-capa-imagem"
-              src="/imagens/Grafico/Ilustracoes/01.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Ilustracoes/01.webp`)}
               alt="Cartaz Inverno - Ilustrações Beatriz Milhazes"
             />
             <span className="ilustracoes-legenda">Inverno</span>
@@ -46,7 +46,7 @@ const GraficoIlustracao: React.FC = () => {
           <div className="ilustracoes-galeria-item">
             <img
               className="ilustracoes-galeria-imagem"
-              src="/imagens/Grafico/Ilustracoes/03.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Ilustracoes/03.webp`)}
               alt="Cartaz Outono - Ilustrações Beatriz Milhazes"
             />
             <span className="ilustracoes-legenda">Outono</span>
@@ -55,7 +55,7 @@ const GraficoIlustracao: React.FC = () => {
           <div className="ilustracoes-galeria-item">
             <img
               className="ilustracoes-galeria-imagem"
-              src="/imagens/Grafico/Ilustracoes/04.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Ilustracoes/04.webp`)}
               alt="Cartaz Primavera - Ilustrações Beatriz Milhazes"
             />
             <span className="ilustracoes-legenda">Primavera</span>
@@ -64,7 +64,7 @@ const GraficoIlustracao: React.FC = () => {
           <div className="ilustracoes-galeria-item">
             <img
               className="ilustracoes-borboleta"
-              src="/imagens/Logo_reduzido.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Logo_reduzido.webp`)}
               alt="Borboleta decorativa"
             />
           </div>
@@ -72,7 +72,7 @@ const GraficoIlustracao: React.FC = () => {
           <div className="ilustracoes-galeria-item">
             <img
               className="ilustracoes-galeria-imagem"
-              src="/imagens/Grafico/Ilustracoes/02.webp"
+              src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/Grafico/Ilustracoes/02.webp`)}
               alt="Cartaz Verão - Ilustrações Beatriz Milhazes"
             />
             <span className="ilustracoes-legenda">Verão</span>
@@ -85,7 +85,7 @@ const GraficoIlustracao: React.FC = () => {
           </a>
           <img
             className="ilustracoes-logo"
-            src="/imagens/logo_Prancheta.webp"
+            src={encodeURI(`${process.env.REACT_APP_ASSETS_URL}/imagens/logo_Prancheta.webp`)}
             alt="Caliane Machado Design Gráfica"
           />
           <a href="/graficominhamarca" className="ilustracoes-proximo">
